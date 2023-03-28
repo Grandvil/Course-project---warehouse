@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Курсовой проект</title>
+    <meta content="charset=utf-8">
+    <script type="module">
+        import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+    </script>
+    <script type="text/javascript" src="three.js"></script>
+    <script type="text/javascript" src="TrackballControls.js"></script>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		#MyWebGLApp {
+			position: relative;
+			margin: auto;
+			align-self: center;
+		}
+
+		#textCover,
+		#scoreCover {
+			position: fixed;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+		#textBlock {
+			width: fit-content;
+            font-size: 58px;
+			background-color: white;
+			color: #000000;
+			text-align: center;
+		}
+		#scoreCover{
+            font-size: 3vw;
+			background-color: white;
+			color: #000000;
+			text-align: center;
+			height: 15vw;
+			width: 15vw;
+		}
+	</style>
+</head>
+
+<body>
+    <!-- <div id="info" style="position: absolute; "> Кликните на объект </div> -->
+    <div id="MyWebGLApp">
+		<div id="textCover">
+			<div id="textBlock">WE WON ZULUL</div>
+		</div>
+		<div id="scoreCover">
+			<div id="scoreBlock">Score:</div><span id="scoreCount">0</span>
+		</div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+
+</html>
